@@ -1,0 +1,193 @@
+/*global*/
+* {
+  margin: 0px; }
+
+* {
+  padding: 0px; }
+
+* {
+  box-sizing: border-box; }
+
+* {
+  overflow-x: hidden; }
+
+* {
+  font-family: 'Raleway';
+  font-style: normal; }
+
+a {
+  color: white; }
+
+/* VARIABLES */
+/* GRAL */
+a:link, a:visited, a:active {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+body {
+  background-color: #1c2431;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  position: relative; }
+
+p {
+  color: gray; }
+
+/* NAV */
+nav {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  nav img {
+    height: 25px; }
+  nav ul {
+    display: flex;
+    font-size: 12px; }
+    nav ul li {
+      margin-left: 20px; }
+
+/* FOOTER */
+footer {
+  height: 800px;
+  background-color: #0b1523;
+  padding: 20px; }
+  footer .footer-logo {
+    text-align: left;
+    margin-top: 200px; }
+  footer .footer-desc {
+    text-align: left;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    footer .footer-desc p {
+      width: 300px;
+      color: white;
+      line-height: 25px; }
+  footer .footer-lists {
+    text-align: left; }
+    footer .footer-lists ul {
+      margin-top: 20px;
+      line-height: 30px; }
+
+/* BODY */
+.main-section-div-inicio img {
+  height: 220px;
+  margin-top: 50px; }
+
+.main-section-div-inicio h1 {
+  font-size: 25px;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/bg-curvy-mobile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.main-section-div-inicio p {
+  font-size: 14px;
+  margin: 10px 50px; }
+
+.main-section-div-inicio button {
+  height: 50px;
+  width: 250px;
+  border-radius: 100px;
+  margin: 20px;
+  background-color: #65e2d9;
+  border-color: #65e2d9;
+  font-weight: 700;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.main-section-div-ventajas {
+  margin: 70px 40px; }
+  .main-section-div-ventajas img {
+    margin: 20px 10px; }
+  .main-section-div-ventajas h3 {
+    margin-bottom: 10px; }
+
+.main-section-div-banner {
+  text-align: left;
+  margin: 30px; }
+  .main-section-div-banner .banner {
+    height: 220px;
+    margin: 30px; }
+  .main-section-div-banner p {
+    font-size: 14px;
+    margin: 10px 30px 10px 0px; }
+  .main-section-div-banner a {
+    color: #65e2d9;
+    text-decoration: underline; }
+
+.main-section-div-cards {
+  height: 900px;
+  margin: 100px 40px; }
+  .main-section-div-cards .quote {
+    height: 20px;
+    margin-top: 100px; }
+  .main-section-div-cards .cards {
+    background-color: #202a3c;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: baseline;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+    .main-section-div-cards .cards .descrip {
+      margin: 20px;
+      font-size: 12px;
+      text-align: left; }
+    .main-section-div-cards .cards .profile {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px; }
+      .main-section-div-cards .cards .profile img {
+        height: 40px;
+        margin-left: 20px;
+        border-radius: 100px; }
+      .main-section-div-cards .cards .profile h4 {
+        font-size: 12px;
+        margin-left: 10px;
+        text-align: left; }
+      .main-section-div-cards .cards .profile p {
+        font-size: 12px;
+        margin-left: 10px;
+        text-align: left; }
+
+.main-section-div-contact {
+  background-color: #202a3c;
+  padding: 30px 10px;
+  margin: 20px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  bottom: 650px; }
+  .main-section-div-contact h3 {
+    margin: 20px; }
+  .main-section-div-contact p {
+    margin: 1px 20px;
+    color: white; }
+  .main-section-div-contact input {
+    height: 40px;
+    width: 250px;
+    border-radius: 100px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .main-section-div-contact button {
+    height: 40px;
+    width: 250px;
+    border-radius: 100px;
+    margin: 20px;
+    background-color: #65e2d9;
+    border-color: #65e2d9;
+    font-weight: 700;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }

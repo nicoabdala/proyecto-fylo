@@ -1,0 +1,255 @@
+/*global*/
+* { margin:0px}
+* {padding : 0px}
+* {box-sizing : border-box}
+* {overflow-x : hidden}
+* { font-family: 'Raleway';
+    font-style: normal;}
+a{
+    color: hsl(0, 0, 100%);
+}
+
+/* VARIABLES */ 
+
+
+/* GRAL */ 
+
+a:link, a:visited, a:active{
+    text-decoration:none;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-color: hsl(217, 28%, 15%);
+    font-size: 14px;
+    color: hsl(0, 0, 100%);
+    text-align: center;
+    position: relative;
+}
+
+p{
+    color: gray;
+}
+
+/* NAV */ 
+
+nav{
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    img{
+        height: 25px;
+    }
+    
+    ul{
+        display: flex;
+        font-size: 12px;
+
+        li{
+            margin-left: 20px;
+            }
+    }
+}
+
+/* FOOTER */ 
+
+footer{
+    height: 800px;
+    background-color: hsl(216, 53%, 9%);
+    padding: 20px;
+
+    .footer-logo{
+        text-align: left;
+        margin-top: 200px;
+    }
+
+    .footer-desc{
+        text-align: left;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p{
+            width: 300px;
+            color: white;
+            line-height: 25px;
+        }
+    }
+
+    .footer-lists{
+        text-align: left;
+
+        ul{
+            margin-top: 20px;
+            line-height: 30px;
+        }
+    }
+}
+
+/* BODY */ 
+
+.main-section-div-inicio{
+    
+    img{
+        height: 220px;
+        margin-top: 50px;
+    }
+
+    h1{
+        font-size: 25px;
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../images/bg-curvy-mobile.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    p{
+        font-size: 14px;
+        margin: 10px 50px;
+    }
+
+    button{
+        height: 50px;
+        width: 250px;
+        border-radius: 100px;
+        margin: 20px;
+        background-color: hsl(176, 68%, 64%);
+        border-color: hsl(176, 68%, 64%);
+        font-weight: 700;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.main-section-div-ventajas{
+    margin: 70px 40px;
+
+    img{
+        margin: 20px 10px;
+    }
+
+    h3{
+        margin-bottom: 10px;
+    }
+}
+
+.main-section-div-banner{
+    text-align: left;
+    margin: 30px;
+
+    .banner{
+        height: 220px;
+        margin: 30px;
+    }
+
+    p{
+        font-size: 14px;
+        margin: 10px 30px 10px 0px;
+    }
+
+    a{
+        color: hsl(176, 68%, 64%);
+        text-decoration: underline;
+    }
+}
+
+.main-section-div-cards{
+    height: 900px;
+    margin: 100px 40px;
+
+    .quote{
+        height: 20px;
+        margin-top: 100px;
+    }
+    
+    .cards{
+        background-color: hsl(219, 30%, 18%);
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;        
+        justify-content: left;
+        align-items: baseline;
+        border-radius: 5px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        .descrip{
+            margin: 20px;
+            font-size: 12px;
+            text-align: left;
+        }
+    
+        .profile{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            
+            img{
+                height: 40px;
+                margin-left: 20px;
+                border-radius: 100px;
+            }
+    
+            h4{
+                font-size: 12px;
+                margin-left: 10px;
+                text-align: left;
+            }
+    
+            p{
+                font-size: 12px;
+                margin-left: 10px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.main-section-div-contact{
+    background-color: hsl(219, 30%, 18%);
+    padding: 30px 10px;
+    margin: 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    bottom: 650px;
+
+    h3{
+        margin: 20px;
+    }
+
+    p{
+        margin: 1px 20px;
+        color: white;
+    }
+
+    input{
+        height: 40px;
+        width: 250px;
+        border-radius: 100px;
+        margin-top: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    button{
+        height: 40px;
+        width: 250px;
+        border-radius: 100px;
+        margin: 20px;
+        background-color: hsl(176, 68%, 64%);
+        border-color: hsl(176, 68%, 64%);
+        font-weight: 700;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
