@@ -61,18 +61,19 @@ footer {
     margin-top: 200px; }
   footer .footer-desc {
     text-align: left;
-    margin-top: 20px;
-    display: flex;
+    margin: 20px;
+    display: inline-flex;
     justify-content: space-between;
     align-items: center; }
     footer .footer-desc p {
-      width: 300px;
+      width: 250px;
       color: white;
+      margin-left: 20px;
       line-height: 25px; }
   footer .footer-lists {
     text-align: left; }
     footer .footer-lists ul {
-      margin-top: 20px;
+      margin: 20px;
       line-height: 30px; }
 
 /* BODY */
@@ -92,7 +93,8 @@ footer {
 
 .main-section-div-inicio p {
   font-size: 14px;
-  margin: 10px 50px; }
+  padding: 10px 50px;
+  background-color: #181f2a; }
 
 .main-section-div-inicio button {
   height: 50px;
@@ -105,32 +107,38 @@ footer {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
 
 .main-section-div-ventajas {
-  margin: 70px 40px; }
+  padding: 50px 50px;
+  background-color: #181f2a; }
   .main-section-div-ventajas img {
     margin: 20px 10px; }
   .main-section-div-ventajas h3 {
     margin-bottom: 10px; }
 
-.main-section-div-banner {
+.main-section-banner {
+  background-color: #181f2a;
   text-align: left;
-  margin: 30px; }
-  .main-section-div-banner .banner {
+  padding: 30px; }
+  .main-section-banner .main-section-banner-img img {
     height: 220px;
     margin: 30px; }
-  .main-section-div-banner p {
+  .main-section-banner .main-section-banner-txt p {
     font-size: 14px;
     margin: 10px 30px 10px 0px; }
-  .main-section-div-banner a {
+  .main-section-banner .main-section-banner-txt a {
     color: #65e2d9;
     text-decoration: underline; }
 
-.main-section-div-cards {
+.main-section-cards {
+  background-color: #181f2a;
   height: 900px;
-  margin: 100px 40px; }
-  .main-section-div-cards .quote {
+  padding: 100px 40px;
+  position: relative; }
+  .main-section-cards .quote {
     height: 20px;
-    margin-top: 100px; }
-  .main-section-div-cards .cards {
+    position: absolute;
+    top: 80px;
+    left: 40px; }
+  .main-section-cards .main-section-div-cards .cards {
     background-color: #202a3c;
     margin-bottom: 30px;
     display: flex;
@@ -139,26 +147,26 @@ footer {
     align-items: baseline;
     border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
-    .main-section-div-cards .cards .descrip {
+    .main-section-cards .main-section-div-cards .cards .descrip {
       margin: 20px;
       font-size: 12px;
       text-align: left; }
-    .main-section-div-cards .cards .profile {
+    .main-section-cards .main-section-div-cards .cards .profile {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       margin-bottom: 20px; }
-      .main-section-div-cards .cards .profile img {
+      .main-section-cards .main-section-div-cards .cards .profile img {
         height: 40px;
         margin-left: 20px;
         border-radius: 100px; }
-      .main-section-div-cards .cards .profile h4 {
+      .main-section-cards .main-section-div-cards .cards .profile h4 {
         font-size: 12px;
         margin-left: 10px;
         text-align: left; }
-      .main-section-div-cards .cards .profile p {
+      .main-section-cards .main-section-div-cards .cards .profile p {
         font-size: 12px;
         margin-left: 10px;
         text-align: left; }
@@ -191,3 +199,148 @@ footer {
     border-color: #65e2d9;
     font-weight: 700;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+@media only screen and (min-width: 900px) {
+  /* NAV */
+  nav {
+    text-align: center;
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    nav img {
+      height: 50px; }
+    nav ul {
+      font-size: 15px; }
+      nav ul li {
+        margin-left: 40px; }
+  /* FOOTER */
+  footer {
+    height: 800px;
+    background-color: #0b1523;
+    padding: 20px; }
+    footer .footer-logo {
+      text-align: left;
+      margin-top: 200px;
+      width: 100%; }
+    footer .footer-desc {
+      text-align: left;
+      margin: 20px;
+      display: inline-flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center; }
+      footer .footer-desc p {
+        width: 250px;
+        color: white;
+        margin-left: 20px;
+        line-height: 25px; }
+    footer .footer-lists {
+      text-align: left; }
+      footer .footer-lists ul {
+        margin: 20px;
+        line-height: 30px; }
+  /* BODY */
+  .main-section-inicio .main-section-div-inicio {
+    background-image: url("../images/bg-curvy-desktop.svg");
+    background-position: end;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .main-section-inicio .main-section-div-inicio img {
+      height: 440px; }
+    .main-section-inicio .main-section-div-inicio h1 {
+      font-size: 40px;
+      background-image: none;
+      padding: 30px 250px; }
+    .main-section-inicio .main-section-div-inicio p {
+      font-size: 18px;
+      margin: 10px 50px;
+      padding: 10px 350px;
+      color: white; }
+    .main-section-inicio .main-section-div-inicio button {
+      height: 50px;
+      width: 250px;
+      border-radius: 100px;
+      margin: 20px;
+      background-color: #65e2d9;
+      border-color: #65e2d9;
+      font-weight: 700;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .main-section-ventajas {
+    display: flex;
+    flex-wrap: wrap; }
+    .main-section-ventajas .main-section-div-ventajas {
+      width: 50%;
+      justify-content: center;
+      align-items: center; }
+  .main-section-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .main-section-banner .main-section-banner-img {
+      width: 50%; }
+      .main-section-banner .main-section-banner-img img {
+        height: 300px; }
+    .main-section-banner .main-section-banner-txt {
+      width: 45%;
+      margin-left: 20px; }
+      .main-section-banner .main-section-banner-txt h4 {
+        font-size: 40px;
+        width: 500px; }
+      .main-section-banner .main-section-banner-txt p {
+        font-size: 18px;
+        margin: 10px 30px 10px 0px; }
+      .main-section-banner .main-section-banner-txt a {
+        color: #65e2d9;
+        text-decoration: underline; }
+  .main-section-cards {
+    height: 600px;
+    position: relative; }
+    .main-section-cards .quote {
+      height: 40px;
+      position: absolute;
+      top: 100px;
+      left: 70px; }
+    .main-section-cards .main-section-div-cards {
+      height: 350px;
+      padding: 20px 40px 100px 40px;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center; }
+      .main-section-cards .main-section-div-cards .cards {
+        width: 30%; }
+        .main-section-cards .main-section-div-cards .cards .descrip {
+          font-size: 14px; }
+        .main-section-cards .main-section-div-cards .cards .profile img {
+          height: 50px; }
+        .main-section-cards .main-section-div-cards .cards .profile h4 {
+          font-size: 14px; }
+  .main-section-contact .main-section-div-contact {
+    width: 60%;
+    position: absolute;
+    left: 250px;
+    bottom: 650px; }
+    .main-section-contact .main-section-div-contact h3 {
+      font-size: 35px; }
+    .main-section-contact .main-section-div-contact p {
+      margin: 1px 20px;
+      color: white;
+      font-size: 16px; }
+    .main-section-contact .main-section-div-contact input {
+      height: 40px;
+      width: 350px;
+      border-radius: 100px;
+      margin-top: 20px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+    .main-section-contact .main-section-div-contact button {
+      height: 40px;
+      width: 150px;
+      border-radius: 100px;
+      margin: 20px;
+      background-color: #65e2d9;
+      border-color: #65e2d9;
+      font-weight: 700;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); } }
